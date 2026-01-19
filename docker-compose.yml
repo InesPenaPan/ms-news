@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   company-news-api:
     build: .
@@ -7,3 +6,11 @@ services:
       - "8082:8082"
     restart: always
     container_name: company_news_container
+    environment:
+      - EUREKA_URL=http://eureka-server:8761
+    networks:
+      - platform-network
+
+networks:
+  platform-network:
+    external: true
