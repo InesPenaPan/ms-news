@@ -1,12 +1,21 @@
 from fastapi import FastAPI, HTTPException, status
+from py_eureka_client import eureka_client
+
 from model import CompanyNewsResult 
 from search_news import search_news_by_company 
 
 # FastAPI initialization
 app = FastAPI(
-    title="MS-CompanyNews Microservice",
-    description="Servicio dedicado a la búsqueda de noticias recientes por nombre de empresa (usando GNews)."
+    title="MS-CompanyNews Microservice"
 )
+
+@app.on_event("startup")
+async def startup_event():
+    await eureka_client.init_async(
+        eureka_server="http://eureka-server:8761/eureka",
+        app_name="ms-news",
+        instance_port=8001
+    )
 
 # ----------------------------------------------------------------------
 # Get company news
