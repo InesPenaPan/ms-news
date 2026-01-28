@@ -1,4 +1,6 @@
-# 📰 Microservicio de API de Búsqueda de Noticias
+# 📰 Microservicio de Extracción Noticias
+
+**Componente del Trabajo de Fin de Máster (TFM)** > *Máster en Ingeniería de Software y Sistemas Informáticos (MSSI)*
 
 Este microservicio ofrece una API construida con **FastAPI** para realizar búsquedas de noticias recientes centradas en el nombre de una empresa específica, utilizando el cliente `GNews` (Google News) como fuente de datos.
 
