@@ -2,7 +2,7 @@
 
 **Componente del Trabajo de Fin de Máster (TFM)** > *Máster en Ingeniería de Software y Sistemas Informáticos (MSSI)*
 
-Microservicio constuido con **FastAPI** para la extracción automatizada de titulares y resúmenes de prensa global mediante el agregador Google News (`GNews).
+Microservicio constuido con **FastAPI** para la extracción automatizada de titulares y resúmenes de prensa global mediante el agregador Google News (`GNews`).
 
 ## 🛠️ Stack 
 El microservicio está desarrollado con las siguientes tecnologías y librerías clave:
@@ -19,7 +19,12 @@ El microservicio está desarrollado con las siguientes tecnologías y librerías
 
 `GET /news/{company}`
 
-Consulta las menciones en prensa de los últimos siete días sobre una entidad.
+Consulta las menciones en prensa de los últimos siete días sobre una entidad. Devuleve una colección `articles` donde cada noticia contiene:
+
+* `title`: Titular de la noticia.
+* `descripction`: Breve extracto o resumen del contenido.
+* `published_date`: Fecha de publicación.
+
 
 
 ## ⚡ Ejuctar el servicio
