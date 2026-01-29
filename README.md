@@ -7,12 +7,18 @@ Microservicio constuido con **FastAPI** para la extracción automatizada de titu
 ## 🛠️ Stack 
 El microservicio está desarrollado con las siguientes tecnologías y librerías clave:
 
+* `FastAPI`: Framework principal utilizado para construir la API.
+* `uvicorn`: Servidor ASGI de alta velocidad encargado de ejecutar la aplicación.
+* `pydantic`: Utilizado para la validación de datos y la gestión de esquemas mediante modelos de Python.
+* `gnews`: Librería encargada de la interfaz con el agregador Google News.
+* `py-eureka-client`: Cliente para la integración con **Netflix Eureka**.
 
-## 💻 Funcionalidades Principales
+## 🌐 Endpoints
 
-El microservicio expone in único endpoint:
+### Extracción de noticias
 
-### Obtener Noticias (`/news/{company_name}`)
+`GET /news/{company}`
+
 
 Este endpoint busca artículos de noticias recientes (filtrados por 7 días y 10 resultados por defecto) usando el nombre de una empresa.
 
