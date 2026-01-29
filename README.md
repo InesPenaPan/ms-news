@@ -19,8 +19,8 @@ El microservicio está desarrollado con las siguientes tecnologías y librerías
 
 `GET /news/{company}`
 
+Consulta las menciones en prensa de los últimos siete días sobre una entidad.
 
-Este endpoint busca artículos de noticias recientes (filtrados por 7 días y 10 resultados por defecto) usando el nombre de una empresa.
 
 ## ⚡ Ejuctar el servicio
 
