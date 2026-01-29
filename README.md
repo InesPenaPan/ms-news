@@ -44,15 +44,12 @@ Una vez levantado el contenedor, la API estará disponible en el puerto `8081`. 
 
 ```bash
 .
-├── models/
-│   ├── model_market.py        # Esquemas Pydantic para métricas de ETFs
-│   └── model_trends.py        # Esquemas Pydantic para sugerencias y series temporales
 ├── docker-compose.yml         # Orquestación de servicios
 ├── Dockerfile                 # Configuración de la imagen Docker
 ├── main.py                    # Punto de entrada de la API (FastAPI)
+├── model.py                   # Esquemas Pydantic para noticias
 ├── README.md                  # Documentación del proyecto
 ├── requirements.txt           # Dependencias del proyecto
-├── retrieve_market_info.py    # Lógica de extracción de datos financieros (Yahoo Finance)
-└── trends_analysis.py         # Lógica de análisis y conexión con Google Trends
+└── search_news.py           # Lógica de extracción (GNews API)
 ```
 
