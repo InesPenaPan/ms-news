@@ -24,23 +24,18 @@ Consulta las menciones en prensa de los últimos siete días sobre una entidad. 
 * `title`: Titular de la noticia.
 * `descripction`: Breve extracto o resumen del contenido.
 * `published_date`: Fecha de publicación.
+* `url`: Enlace directo a la fuente original de la noticia.Fecha de publicación.
+* `source`: Nombre del medio o plataforma que publica la información.
 
+## ⚡ Ejecución
 
-
-## ⚡ Ejuctar el servicio
-
-### Pasos
-
-1. **Situarse en el Directorio**: Abre tu terminal y navega hasta el directorio raíz del proyecto.
-
-2. **Construir e iniciar**: Ejecuta el siguiente comando. La instrucción `--build` garantiza que tu imagen se construya con el código más reciente antes de iniciar el contenedor.
+Navega hasta el directorio raíz del proyecto y ejecuta el siguiente comando en tu terminal:
 
 ```bash
 docker compose up --build -d
 ```
-
-3. **Acceder a la API**: El microservicio estará accesible en el puerto `8082` (definido en el docker-compose.yml). Utiliza tu navegador o una herramienta como cURL o Postman para realizar la siguiente peticion:
+Una vez levantado el contenedor, la API estará disponible en el puerto `8081`. Puedes verificar el funcionamiento realizando peticiones a través de tu navegador, cURL o Postman:
 
 | Endpoint | URL Ejemplo |
 | :--- | :--- |
-| News | `http://127.0.0.1:8082/news/Apple` |
+| Extracción de noticias | `http://127.0.0.1:8082/news/Apple` |
