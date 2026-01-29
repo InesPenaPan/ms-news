@@ -50,6 +50,6 @@ Una vez levantado el contenedor, la API estará disponible en el puerto `8081`. 
 ├── model.py                   # Esquemas Pydantic para noticias
 ├── README.md                  # Documentación del proyecto
 ├── requirements.txt           # Dependencias del proyecto
-└── search_news.py           # Lógica de extracción (GNews API)
+└── search_news.py             # Lógica de extracción (GNews API)
 ```
 
