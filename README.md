@@ -2,7 +2,11 @@
 
 **Componente del Trabajo de Fin de Máster (TFM)** > *Máster en Ingeniería de Software y Sistemas Informáticos (MSSI)*
 
-Este microservicio ofrece una API construida con **FastAPI** para realizar búsquedas de noticias recientes centradas en el nombre de una empresa específica, utilizando el cliente `GNews` (Google News) como fuente de datos.
+Microservicio constuido con **FastAPI** para la extracción automatizada de titulares y resúmenes de prensa global mediante el agregador Google News (`GNews).
+
+## 🛠️ Stack 
+El microservicio está desarrollado con las siguientes tecnologías y librerías clave:
+
 
 ## 💻 Funcionalidades Principales
 
