@@ -14,7 +14,7 @@ async def startup_event():
     await eureka_client.init_async(
         eureka_server="http://eureka-server:8761",
         app_name="ms-news",
-        instance_port=8001
+        instance_port=8082
     )
 
 # ----------------------------------------------------------------------
